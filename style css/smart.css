@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+}
+ul li{
+    list-style: none;
+}
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+p,li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.20em;
+} 
+h1,h2,h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+
+/* ############## utility calsses ######### */
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.lg-heading{
+    font-size: 3rem;
+}
+.md-heading{
+    font-size: 2.0rem;
+}
+.text-red{
+    color: rgb(94, 255, 0);
+}
+.text-light{
+    color:#f4f4f4 ;
+}
+.text-black{
+    color:#333 ;
+}
+.text-gray{
+    color: #555555;
+}
+.bg-dark{
+    background: #263238;
+}
+.btn{
+    display: inline-block;
+    padding:0.5em 1.5em ;
+    font-weight:500 ;
+    text-transform: uppercase;
+    margin: 0.5em,0;
+}
+.btn-primary{
+    background-color: #fff;
+    border-radius: 10em ;
+}
+.btn-primary:hover{
+    background-color:rgb(255, 255, 255) ;
+}
+.btn-secondary{
+    border: 2px solid rgb(0, 128, 122) ;
+    border-radius: 1.5em;
+    color: hotpink;
+    background: white;
+}
+.btn-secondary:hover{
+    background-color: turquoise;
+}
+
+/* ######################### header style ########### */
+.header{
+    position: relative;
+    height: 95vh;
+    background: url("../image/header\ image.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo{
+    float: left;
+}
+.nav-items{
+    float: right;
+    margin-top: 1rem;
+}
+.nav-item{
+    display: inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+.navbar a{
+    padding-bottom: 0.5rem;
+}
+.navbar a:hover{
+    border-bottom:1px solid #fff;
+}
+.navbar::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.navbar a:link,
+.navbar a:visited{
+    color: #f4f4f4;
+}
+/* ################### header content style ############## */
+
+.header-content{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.header-content h1{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.header-content p{
+    text-transform: uppercase;
+}
+/* ################SHOWCASE STYLE ############## */
+.showcase{
+    background: #ddd;
+    padding: 10rem 0;
+}
+.row{
+    height: 350px;
+    background: #fff;
+    box-shadow: 0px 0px 20px 0px #aaa;
+}
+.row1{
+    margin-bottom: 10rem;
+}
+.row1 .img-box, .row2 .text-box {
+    float: left;
+    width: 50%;
+}
+.row2 .img-box, .row1 .text-box{ 
+    float: right;
+    width: 50%;
+} 
+.row .img-box{
+    
+    height: 100%;
+}
+.row .text-box {
+    padding: 3rem;
+}
+.row .img-box img{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* ######################### FEATURES SECTION STYLE ####################  */
+
+.features{
+    padding: 10rem 0;
+}
+.box-wrapper{
+    box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.925);
+}
+.box{
+    width: 33.3333333%;
+    text-align: center;
+    float: left;
+    padding: 2rem;
+}
+.box-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.box-1, .box-3{
+    background-color: #263238;
+    color: #f4f4f4;
+}
+.box-2{
+    background-color: background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    
+    color: white;
+}
+
+/* #################### FOOTER STYLE ################### */
+.footer{
+    background: #263238;
+    color: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+}
+.social-media-link i{
+    margin:2rem ;
+
+}
+/* ###################### ABOUT SECTION STYLE ################ */
+.about{
+    padding: 5rem 0;
+}
+.about-heading::after{
+    content: "";
+    display: block;
+    border: 2px solid #e63946;
+    width: 100%;
+}
+/* ######################## ABOUT WRAPPER STYLE ################# */
+.about-wrapper{
+    text-align: center;
+    margin-top: 4rem;
+}
+.about-wrapper .left{
+    float: left;
+    width: 50%;
+}
+.about-wrapper .right{
+    float: right;
+    width: 50%;
+}
+.about-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.about-wrapper li::before{
+    content: "\2713";
+    color: #e63946;
+    font-weight: bold;
+    padding-right: 2rem;
+}
+/* ######################### COUNT STYLE ##################### */
+.counts{
+    margin-top: 3rem;
+}
+.count-item{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.counts::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.count-item samp{
+    font-size: 4rem;
+    font-weight: 500;
+    color: #e63946;
+}
+.count-item p{
+    font-size: 2rem;
+    font-weight:700 ;
+    color: #555;
+}
+/* ################### CTA BANNER STYLE ############ */
+.cta-banner{
+    margin-top: 3rem;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    color: #f4f4f4;;
+    padding: 1rem;
+    box-shadow:5px 5px 10px 1px black:
+
+}
+.cta-banner-left {
+    width: 60%;
+    float: left;
+}
+.cta-banner-right{
+    width: 40%;
+    float: right;
+    text-align: right;
+}
+.cta-line{
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 2rem;
+}
+.btn-cta{
+    text-align: center;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
+    border: 2px solid white;
+    padding: 0.5rem 2.5rem;
+    letter-spacing: 0.5rem;
+    color: #f4f4f4;
+}
+.cta-banner::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* ###################### CONTACT FORM STYLE ############## */
+.contact-form{
+    padding: 6rem 0;
+    font-size: 2rem;
+    background: #f7f7f7;
+    
+}
+.form-wrapper{
+       
+       margin-top: 6rem;
+}
+.form-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.form-wrapper .company-address{
+    height: 800px;
+    background: #fff;
+    float: left;
+    width: 49%;
+}
+.form-wrapper .company-address i{
+    display: inline-block;
+    margin-right: 1rem;
+}
+.form-wrapper .company-address h2{
+    display: inline-block;
+    margin-right: 1rem;
+}
+.form-wrapper .form{
+    background: #fff;
+    width:49% ;
+    float:right ;
+}
+.form-wrapper .address-group{
+    margin-bottom: 4rem;
+}
+.form-wrapper .company-address img{
+    max-width: 90%;
+    min-height: 40px;
+    object-fit: cover;
+    object-position: right;
+}
+/* ######################## form styling ############### */
+.form-wrapper .form{
+     height: 800px;
+      font-size: 2rem;
+      background: #fff;
+      width: 49%;
+      float: right;
+      padding: 1rem;
+      margin-bottom: 2rem;
+}
+.form h1::after{
+    content: "";
+    display: block;
+    border-bottom: 3px solid #e63946;
+    width: 100%;
+}
+.form-wrapper .form label{
+    display: block;
+}
+.form-wrapper .form input{
+    padding: 0.5rem;
+    width: 100%;
+}
+.form-wrapper .form .form-group{
+    margin-bottom: 2rem;
+}
+.form-wrapper .form label::after{
+    content: "";
+    color: #e63946;
+}
+.form-wrapper .form textarea{
+    width: 100%;
+    height: 300px;
+    padding: 1rem;
+    
+}
+.form-btn{
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em 3em;
+    font-size: 2rem;
+    text-transform: uppercase;
+    background: #e63946;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    
+}
+/* ######################### media queries ################### */
+ @media (max-with:500){
+html{
+    /* font-size: 8px; */
+    font-size: 50%;
+}
+
+.navbar .nav-items, .navbar .logo{
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+ .row{
+    height: auto;
+    width: 100%;
+}
+.row .img-box, .row .text-box{
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+.features .box{
+    float: none;
+    width: 100%;
+    text-align: center;
+    box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.925);
+}
+.features .box-2, .features .box-3{
+    margin-top: 5rem;
+}
+.box-wrapper{
+    box-shadow:none
+}
+.cta-banner .cta-banner-left, .cta-banner .cta-banner-right{
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+.form-wrapper .company-address{
+    float: none;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5rem;
+}
+.form-wrapper .form{
+    float: none;
+    width: 100%;
+    height: auto;
+}
+ }
+  @media(min-width:501px) and (max-width:768px){
+    html{
+        /* font-size: 8px; */
+        font-size: 50%;
+    }
+    p{
+        font-size: 1.8rem ;
+    }
+}
+    
+    .navbar .nav-items, .navbar .logo{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .row{
+        height: auto;
+        width: 100%;
+    }
+    .row .img-box, .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .features .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+        box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.925);
+    }
+    .features .box-2, .features .box-3{
+        margin-top: 5rem;
+    }
+    .box-wrapper{
+        box-shadow:none
+    }
+    .cta-banner .cta-banner-left, .cta-banner .cta-banner-right{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .form-wrapper .company-address{
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5rem;
+    }
+    .form-wrapper .form{
+        float: none;
+        width: 100%;
+        height: auto;
+    }  
+}
+@media(min-width: 769px) and (max-width: 1200px){
+    html{
+        font-size: 56.25%;
+    }
+    .row .text-box h2{
+        font-size: 2.2rem;
+        font-weight: 500;
+    }
+}
+@media (orientation:landscape) and (max-height: 500px){
+    .header{
+       height: 90vmax;
+    }
+} 
